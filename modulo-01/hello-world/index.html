@@ -24,7 +24,19 @@
     </script> 
 -->
     <script type="text/babel">
-        ReactDOM.render(<h1>Hello Word</h1>, document.getElementById('app'));
+
+        var Title = React.createClass({
+        render: function() {
+            return (
+                <div>
+                    <h1>Title</h1>
+                    <span>Hello world Title</span>
+                </div>
+            )
+        }
+    })
+
+        ReactDOM.render(<Title />, document.getElementById('app'));
 </script>
 </body>
 
