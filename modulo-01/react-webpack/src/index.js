@@ -1,6 +1,12 @@
 'use strict'
 
-// importando a funçao que foi exportada no app.js
-var sum = require('./app')
+var React = require('react')
+var ReactDOM = require('react-dom')
 
-console.log(sum(1, 2));
+// importando a funçao que foi exportada no app.js
+var Title = require('./app')
+
+ReactDOM.render(
+    React.createElement(Title),
+    document.querySelector('[data-js="app"]')
+)
